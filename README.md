@@ -1,2 +1,3 @@
-# clan
-#Luck website
+# lucknet / clan
+
+クラン「#Luck」のウェブサイト
