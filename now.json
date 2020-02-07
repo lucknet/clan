@@ -13,7 +13,7 @@
             "handle": "filesystem"
         },
         {
-            "src": "^(?!.*(png|jpg|webp|svg|ico|gif|json)$).+$",
+            "src": "^(?!.*(png|jpg|webp|svg|ico|gif|json|webm)$).+$",
             "status": 404,
             "dest": "/404.html"
         }
