@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
 	<title>ホーム / Home | #Luck</title>
 	<meta name="description" content="Minecraftや、その他FPSゲームなど幅広い分野で活動しているクラン「#Luck」の公式ウェブサイトです。" />
@@ -14,89 +15,113 @@
 	<meta property="og:site_name" content="#Luck Official Website">
 	<meta property="og:title" content="ホーム / Home">
 	<meta property="og:description" content="Minecraftや、その他FPSゲームなど幅広い分野で活動しているクラン「#Luck」の公式ウェブサイトです。">
-	<link rel="shortcut icon" type="image/jpg" href="assets/img/clover.jpg" />
+	<link rel="shortcut icon" type="image/jpg" href="../assets/img/clover.jpg" />
 	<meta property="og:type" content="website">
 	<meta charset="utf-8">
-	<link href="//fonts.googleapis.com/earlyaccess/roundedmplus1c.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Roboto+Mono&display=swap" rel="stylesheet"
+		media="print" onload="this.media='all'" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.4.1/minty/bootstrap.min.css"
+		integrity="sha256-rGD65yu4pgtb1ogSya8k57iok2duiUHYywuZAa9m07E=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<link href="//stackpath.bootstrapcdn.com/bootswatch/4.1.1/minty/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/fontawesome.min.css"
+		integrity="sha256-0mlw4Ae1j9eDzZTzLuw5X9fBCL9nAehrtVyKfIstZQA=" crossorigin="anonymous" media="print"
+		onload="this.media='all'" />
 	<style type="text/css" media="screen">
-	body,*{font-family: "Rounded Mplus 1c";}
-	ul.a, ol.a{
-		color: #668ad8;
-		border: dashed 2px #668ad8;
-		background: #f1f8ff;
-		padding: 0.5em 0.5em 0.5em 2em;
-	}
-	ul.aa li.aa, ol.aa li.aa {
-		line-height: 1.5;
-		padding: 0.5em 0;
-	}
-	html {
-		position: relative;
-		min-height: 100%;
-	}
-	.footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		padding-top: 10px;
-		padding-bottom: 10px;
-		background-color: #313131;
-		font-size: 80%;
-		width: 100%;
-		text-align: center;
-	}
-	footer address{
-		color: #fff;
-		letter-spacing: 5px;
-	}
-</style>
+		body,
+		* {
+			font-family: 'Font Awesome 5 Brands', 'Font Awesome 5 Free', 'Roboto Mono', "Noto Sans JP";
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Brands';
+			font-style: normal;
+			font-weight: 400;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-brands-400.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		@font-face {
+			font-family: 'Font Awesome 5 Free';
+			font-style: normal;
+			font-weight: 900;
+			src: url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/webfonts/fa-solid-900.woff2") format("woff2");
+			font-display: swap;
+		}
+
+		ul.a,
+		ol.a {
+			color: #668ad8;
+			border: dashed 2px #668ad8;
+			background: #f1f8ff;
+			padding: 0.5em 0.5em 0.5em 2em;
+		}
+
+		ul.aa li.aa,
+		ol.aa li.aa {
+			line-height: 1.5;
+			padding: 0.5em 0;
+		}
+
+		html {
+			position: relative;
+			min-height: 100%;
+		}
+
+		.footer {
+			padding: 2.5rem 0;
+			color: #999;
+			text-align: center;
+			background-color: #f9f9f9;
+			border-top: .05rem solid #e5e5e5;
+		}
+
+		.footer p:last-child {
+			margin-bottom: 0;
+		}
+	</style>
 </head>
+
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="margin-bottom: 5px">
 		<a class="navbar-brand" href="#">#Luck</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
+			aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 		<div class="collapse navbar-collapse" id="navbarColor01">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item active">
-					<a class="nav-link" href="#">ホーム <span class="sr-only">(current)</span></a>
+					<a class="nav-link" href="/"><i class="fas fa-home"></i> ホーム</a>
 				</li>
 				<li class="nav-item">
-					<a class="nav-link" href="term">規約</a>
+					<a class="nav-link" href="../term"><i class="fas fa-book"></i> 規約</a>
 				</li>
 			</ul>
 		</div>
 	</nav>
 	<div class="container">
-						<nav aria-label="パンくずリスト">
-  <ol class="breadcrumb">
-  	<li class="breadcrumb-item"><a href="https://lucknetwork.jp"><i class="fas fa-home"></i> lucknetwork.jp</a></li>
-  	<li class="breadcrumb-item active">clan.lucknetwork.jp</li>
-  </ol>
-</nav>
-<div class="card" style="margin-bottom: 10px">
-  <div class="card-body">
-    <h4 class="card-title">Welcome to <strong>#Luck</strong>!</h4>
-    <p class="card-text">Minecraftや、その他FPSゲームなど幅広い分野で活動しているクラン「#Luck」の公式ウェブサイトです。</p>
-  </div>
-</div>
-<div class="card" style="margin-bottom: 10px">
-  <div class="card-body">
-    <h4 class="card-title">クラン歌</h4>
-    <p class="card-text">極悪伝説</p>
-<video controls>
-  <source src="gokuaku.webm" type="video/webm">
-</video>
-  </div>
-</div>
+		<div class="card" style="margin-bottom: 10px">
+			<div class="card-body">
+				<h4 class="card-title">Welcome to <strong>#Luck</strong>!</h4>
+				<p class="card-text">Minecraftや、その他FPSゲームなど幅広い分野で活動しているクラン「#Luck」の公式ウェブサイトです。</p>
+			</div>
+		</div>
+		<div class="card" style="margin-bottom: 10px">
+			<div class="card-body">
+				<h4 class="card-title">クラン歌</h4>
+				<p class="card-text">極悪伝説</p>
+				<video controls>
+					<source src="gokuaku.webm" type="video/webm">
+				</video>
+			</div>
+		</div>
 	</div>
 	<footer class="footer">
-		<address>&copy 2016 - 2019 Clan #Luck</address>
+		<p>&copy 2016 - 2020 #Luck / Powered by <a href="https://bootswatch.com/">Bootswatch</a>.</p>
 	</footer>
 	<script src="//code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="//bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
