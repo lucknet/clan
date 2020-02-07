@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "name": "clan",
+    "routes": [{
+            "src": "/",
+            "dest": "index.html"
+        },
+        {
+            "src": "^(.*)$",
+            "dest": "$1.html"
+        },
+        {
+            "handle": "filesystem"
+        },
+        {
+            "src": "^(?!.*(png|jpg|webp|svg|ico|gif|json)$).+$",
+            "status": 404,
+            "dest": "/404.html"
+        }
+    ]
+}
