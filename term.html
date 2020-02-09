@@ -40,6 +40,16 @@
       font-display: swap;
     }
 
+    @media screen and (max-width: 430px) {
+      .hide {
+        display: none
+      }
+
+      .show {
+        display: unset !important
+      }
+    }
+
     @font-face {
       font-family: 'Font Awesome 5 Free';
       font-style: normal;
@@ -97,6 +107,12 @@
           <a class="nav-link active" href="#"><i class="fas fa-book"></i> 規約</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="../members"><i class="fas fa-user"></i> メンバー</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../records"><i class="fas fa-trophy"></i> 活動記録</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-link" href="../thanks"><i class="fas fa-heart"></i> Special Thanks</a>
         </li>
       </ul>
@@ -116,7 +132,8 @@
       <div class="card-body">
         <h5 class="card-title" style="color: #1D1D1D"><i class="fas fa-star"></i> 趣旨</h5>
         <p>本クランはゲームプレイを主として集まったクランです。<br>
-          クランとしてメンバー同士で楽しむ事を第一としています。使用しているVCツールは <a href="https://discordapp.com"><i class="fab fa-discord"></i>
+          クランとしてメンバー同士で楽しむ事を第一としています。使用しているVCツールは <a style="white-space: nowrap" href="https://discordapp.com"><i
+              class="fab fa-discord"></i>
             Discord</a> となっています。</p>
         <hr>
         <h5 class="card-title" style="color: #1D1D1D"><i class="fas fa-exclamation-triangle"></i> 注意事項</h5>
@@ -144,7 +161,8 @@
         </ul>
         <hr>
         <h5 class="card-title" style="color: #1D1D1D"><i class="fas fa-door-open"></i> 参加方法</h5>
-        <strong>上記の規約を一読し同意できるようでしたら</strong> <i class="fab fa-discord"></i> Discord: <u>dedetyan#2670</u>
+        <strong>上記の規約を一読し同意できるようでしたら</strong> <span style="white-space: nowrap"><i class="fab fa-discord"></i> Discord:
+          <u>dedetyan#2670</u></span>
         まで以下の事項を添えて申請してください。
         <ul class="a aa">
           <li class="aa">IN率</li>
@@ -165,8 +183,10 @@
     </div>
   </div>
   <footer class="footer">
-    <p>&copy 2016 - 2020 #Luck &#x30fb; <span style="white-space:nowrap">Powered by <a
-          href="https://bootswatch.com/">Bootswatch</a>.</span></p>
+    <p>&copy 2016 - 2020 #Luck<span class="hide"> &#x30fb; </span><span style="display:none" class="show">
+        <br>
+      </span> <span style="white-space:nowrap">Powered
+        by <a href="https://bootswatch.com/">Bootswatch</a>.</span></p>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"
     integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>

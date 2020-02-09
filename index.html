@@ -49,6 +49,16 @@
 			font-display: swap;
 		}
 
+		@media screen and (max-width: 430px) {
+			.hide {
+				display: none
+			}
+
+			.show {
+				display: unset !important
+			}
+		}
+
 		ul.a,
 		ol.a {
 			color: #668ad8;
@@ -98,6 +108,12 @@
 					<a class="nav-link" href="../term"><i class="fas fa-book"></i> 規約</a>
 				</li>
 				<li class="nav-item">
+					<a class="nav-link" href="../members"><i class="fas fa-user"></i> メンバー</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../records"><i class="fas fa-trophy"></i> 活動記録</a>
+				</li>
+				<li class="nav-item">
 					<a class="nav-link" href="../thanks"><i class="fas fa-heart"></i> Special Thanks</a>
 				</li>
 			</ul>
@@ -105,14 +121,17 @@
 	</nav>
 	<div class="container">
 		<div class="card" style="margin-bottom: 10px">
-			<div class="card-body">
-				<img class="rounded float-left" width=200px height=200px src="assets/img/clover.png">
+			<div class="card-body mx-auto">
+				<img class="rounded float-md-left" width=200px height=200px src="../assets/img/clover.png">
 				<h4 class="card-title">Welcome to <strong>#Luck</strong> 👊</h4>
 				<p class="card-text">MinecraftやApex、その他FPSゲームなど幅広い分野で活動しているクラン「#Luck」の公式ウェブサイトです。</p>
+				<a href="https://steamcommunity.com/groups/clanlucksteam" class="card-link"><i class="fab fa-steam"></i>
+					Steam コミュニティ</a>
 			</div>
 		</div>
 		<div class="card" style="margin-bottom: 10px">
-			<div class="card-body">
+			<div class="card-body mx-auto">
+				<p class="text-center"><i class="fas fa-info"></i> 最新情報</p>
 				<blockquote class="twitter-tweet" data-lang="ja" data-dnt="true">
 					<p lang="ja" dir="ltr">シーズン４も始まったということで、クラン#Luck
 						APEX部門(PC)の新規メンバーを募集します！😆<br>ガチクランではないので雰囲気重視です。楽しくプレイしたい人は是非！✨<br>詳細は↓ <a
@@ -132,8 +151,10 @@
 		</div>
 	</div>
 	<footer class="footer">
-		<p>&copy 2016 - 2020 #Luck &#x30fb; <span style="white-space:nowrap">Powered by <a
-					href="https://bootswatch.com/">Bootswatch</a>.</span></p>
+		<p>&copy 2016 - 2020 #Luck<span class="hide"> &#x30fb; </span><span style="display:none" class="show">
+				<br>
+			</span> <span style="white-space:nowrap">Powered
+				by <a href="https://bootswatch.com/">Bootswatch</a>.</span></p>
 	</footer>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"
 		integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8=" crossorigin="anonymous"></script>
